@@ -21,8 +21,11 @@ public class RockPaperScissors {
         else if ((computerChoice.equals("Rock") && yourChoice.equals("Paper")) || computerChoice.equals("Paper") && yourChoice.equals("Rock") || computerChoice.equals("Scissors") && yourChoice.equals("Paper")){
             System.out.println("Sorry! You lose!");
         }
-        else {
+        else if ((computerChoice.equals("Rock") && yourChoice.equals("Rock")) || computerChoice.equals("Paper") && yourChoice.equals("Paper") || computerChoice.equals("Scissors") && yourChoice.equals("Scissors")){
             System.out.println("It's a draw! Try again!");
+        }
+        else {
+            System.out.println("This choice is not valid. Try again!");
         }
 
         scanner.close();
